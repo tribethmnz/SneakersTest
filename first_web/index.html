@@ -1,0 +1,129 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>SneakerShop - Inicio</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f7f7f7; }
+    header { background:#111; color:#fff; padding:20px; text-align:center; }
+    nav { display:flex; justify-content:center; gap:20px; background:#222; padding:10px; }
+    nav a { color:#fff; text-decoration:none; font-weight:bold; }
+    .hero { padding:60px; text-align:center; background:#000; color:#fff;
+      animation: fadeIn 1.4s ease-in-out; }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; padding:40px; }
+    .card { background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition: transform .3s; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width:100%; border-radius:10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SneakerShop</h1>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Las mejores zapatillas del mercado</h2>
+    <p>Encuentra tu estilo.Ya foldea, solo ando probando xd.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw50eaabfa/products/NIHF1937-100/NIHF1937-100-6.JPG" alt="Zapatilla 1">
+      <h3>Airforce ALV!</h3>
+      <p>$120</p>
+    </div>
+    <div class="card">
+      <img src="https://www.dtlr.com/cdn/shop/files/Timberland_TB110061713_M107.jpg?v=1726803403" alt="Zapatilla 2">
+      <h3>Timberlands pq son las mias xd</h3>
+      <p>$140</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!-- catalogo.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>SneakerShop - Catálogo</title>
+  <style>
+    body { margin:0; font-family:Arial; background:#f4f4f4; }
+    header { background:#111; color:#fff; padding:20px; text-align:center; }
+    nav { display:flex; justify-content:center; background:#222; padding:10px; }
+    nav a { color:#fff; margin:0 20px; text-decoration:none; font-weight:bold; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:40px; }
+    .card { background:#fff; padding:20px; border-radius:12px; box-shadow:0 3px 12px rgba(0,0,0,0.1); transition:.3s; }
+    .card:hover { transform:translateY(-5px); }
+    .card img { width:100%; border-radius:10px; }
+  </style>
+</head>
+<body>
+  <header><h1>Catálogo</h1></header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtClzJb-fWSzheh1KrG_mfMyvV7RGsv5OQQw&s" alt="Sneaker 3">
+      <h3>Las de JESUCRISTO</h3>
+      <p>$160</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSctIv0UxtPnuxlD2o0pqPL6aVEw2fAvlNFw&s" alt="Sneaker 4">
+      <h3>Esto existe?</h3>
+      <p>$110</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <style>
+    body { margin:0; font-family:Arial; background:#eee; }
+    header { background:#111; color:#fff; padding:20px; text-align:center; }
+    nav { display:flex; justify-content:center; background:#222; padding:10px; }
+    nav a { color:#fff; margin:0 20px; text-decoration:none; font-weight:bold; }
+    form { max-width:400px; margin:40px auto; background:#fff; padding:20px; border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1); animation: fadeIn .8s; }
+    @keyframes fadeIn { from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:none;} }
+    input, textarea { width:100%; margin:10px 0; padding:10px; border-radius:8px; border:1px solid #ccc; }
+    button { width:100%; padding:12px; background:#000; color:#fff; border:none; border-radius:8px; cursor:pointer; }
+    button:hover { background:#333; }
+  </style>
+</head>
+<body>
+  <header><h1>Contacto</h1></header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <form>
+    <h2>Escríbenos</h2>
+    <input type="text" placeholder="Tu nombre" required />
+    <input type="email" placeholder="Tu correo" required />
+    <textarea placeholder="Mensaje" rows="4"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

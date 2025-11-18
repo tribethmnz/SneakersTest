@@ -1,0 +1,36 @@
+<!-- contacto.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto</title>
+  <style>
+    body { margin:0; font-family:Arial; background:#eee; }
+    header { background:#111; color:#fff; padding:20px; text-align:center; }
+    nav { display:flex; justify-content:center; background:#222; padding:10px; }
+    nav a { color:#fff; margin:0 20px; text-decoration:none; font-weight:bold; }
+    form { max-width:400px; margin:40px auto; background:#fff; padding:20px; border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1); animation: fadeIn .8s; }
+    @keyframes fadeIn { from{opacity:0; transform:translateY(20px);} to{opacity:1; transform:none;} }
+    input, textarea { width:100%; margin:10px 0; padding:10px; border-radius:8px; border:1px solid #ccc; }
+    button { width:100%; padding:12px; background:#000; color:#fff; border:none; border-radius:8px; cursor:pointer; }
+    button:hover { background:#333; }
+  </style>
+</head>
+<body>
+  <header><h1>Contacto</h1></header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <form>
+    <h2>Escríbenos</h2>
+    <input type="text" placeholder="Tu nombre" required />
+    <input type="email" placeholder="Tu correo" required />
+    <textarea placeholder="Mensaje" rows="4"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
